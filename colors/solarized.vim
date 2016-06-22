@@ -967,6 +967,13 @@ endfunction
 autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
 
 "}}}
+" color_coded {{{
+let s:fg_variable      = ' ".s:vmode."fg=#969896 '
+exe 'hi Member       ' .s:fmt_none . s:fg_violet   .s:bg_none . ' gui=italic'
+exe 'hi Variable     ' .s:fmt_none . s:fg_variable .s:bg_none . ' gui=none'
+exe 'hi Namespace    ' .s:fmt_none . s:fg_orange   .s:bg_none . ' gui=none'
+exe 'hi EnumConstant ' .s:fmt_none . s:fg_green    .s:bg_none . ' gui=none'
+" }}}
 " License "{{{
 " ---------------------------------------------------------------------
 "
